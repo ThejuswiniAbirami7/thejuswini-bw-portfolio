@@ -50,26 +50,26 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 hover-scale cursor-default transition-all duration-300">Let's Connect</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover-scale cursor-default transition-all duration-300">
             Ready to collaborate on exciting projects and opportunities
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Information */}
-          <Card className="hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20">
+          <Card className="hover:shadow-2xl transition-all duration-500 border-2 hover:border-primary/30 hover-scale animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl">Contact Information</CardTitle>
+              <CardTitle className="text-2xl hover-scale cursor-default transition-all duration-300">Contact Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon;
                 const content = (
-                  <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <IconComponent className="h-5 w-5 text-primary" />
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-all duration-300 hover-scale hover:shadow-lg" style={{animationDelay: `${index * 100}ms`}}>
+                    <div className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                      <IconComponent className="h-5 w-5 text-primary transition-transform duration-300" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">{contact.label}</p>
@@ -90,9 +90,9 @@ const Contact = () => {
           </Card>
 
           {/* Professional Links */}
-          <Card className="hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20">
+          <Card className="hover:shadow-2xl transition-all duration-500 border-2 hover:border-primary/30 hover-scale animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl">Professional Links</CardTitle>
+              <CardTitle className="text-2xl hover-scale cursor-default transition-all duration-300">Professional Links</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {professionalLinks.map((link, index) => {
@@ -103,11 +103,12 @@ const Contact = () => {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="w-full justify-start gap-3 h-16 text-left hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    className="w-full justify-start gap-3 h-16 text-left hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-scale hover:shadow-lg animate-fade-in"
+                    style={{animationDelay: `${index * 100}ms`}}
                   >
                     <a href={link.href} target="_blank" rel="noopener noreferrer">
-                      <div className="p-2 rounded-lg bg-primary/10">
-                        <IconComponent className="h-5 w-5" />
+                      <div className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                        <IconComponent className="h-5 w-5 transition-transform duration-300" />
                       </div>
                       <div>
                         <p className="font-medium">{link.label}</p>
@@ -121,13 +122,13 @@ const Contact = () => {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
-          <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
+        <div className="mt-12 text-center animate-fade-in">
+          <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20 hover:shadow-2xl transition-all duration-500 hover-scale">
             <CardContent className="py-8">
-              <p className="text-lg font-medium mb-4">Ready to start something amazing together?</p>
-              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="text-lg font-medium mb-4 hover-scale cursor-default transition-all duration-300">Ready to start something amazing together?</p>
+              <Button asChild size="lg" className="shadow-lg hover:shadow-2xl transition-all duration-300 hover-scale hover:rotate-1">
                 <a href="mailto:thejuswiniabirami786@gmail.com">
-                  <Mail className="h-5 w-5 mr-2" />
+                  <Mail className="h-5 w-5 mr-2 transition-transform duration-300 hover:scale-110" />
                   Get In Touch
                 </a>
               </Button>

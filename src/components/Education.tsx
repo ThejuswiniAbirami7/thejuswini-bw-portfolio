@@ -22,20 +22,20 @@ const Education = () => {
   return (
     <section id="education" className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Education</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 hover-scale cursor-default transition-all duration-300">Education</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto hover-scale cursor-default transition-all duration-300">
             Academic journey shaping my foundation in computer science and technology
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {educationData.map((edu, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20">
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-2 hover:border-primary/30 hover-scale hover:-rotate-1 animate-fade-in cursor-default">
               <CardHeader className="pb-4">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                  <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
+                    <GraduationCap className="h-6 w-6 text-primary transition-transform duration-300" />
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-xl mb-2">{edu.institution}</CardTitle>
