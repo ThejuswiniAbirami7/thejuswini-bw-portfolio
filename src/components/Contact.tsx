@@ -39,6 +39,11 @@ const Contact = () => {
       icon: ExternalLink,
       label: "LeetCode",
       href: "https://leetcode.com/u/Thejuswini_K/"
+    },
+    {
+      icon: ExternalLink,
+      label: "HackerRank",
+      href: "https://www.hackerrank.com/profile/thejuswiniabira2"
     }
   ];
 
