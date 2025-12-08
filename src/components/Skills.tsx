@@ -17,7 +17,13 @@ const Skills = () => {
     certifications: {
       icon: Award,
       title: "Certifications",
-      skills: ["Cyber Security (May 2025)"]
+      skills: [
+        "Cyber Security (May 2025)",
+        "IBM SkillsBuild - Data Fundamentals",
+        "Simplilearn - Data Structures in C",
+        "Simplilearn - Data Science",
+        "NPTEL - Programming in Java"
+      ]
     },
     languages: {
       icon: Globe,
