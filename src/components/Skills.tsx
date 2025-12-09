@@ -7,7 +7,7 @@ const Skills = () => {
     hardSkills: {
       icon: Code,
       title: "Technical Skills",
-      skills: ["Python", "C", "Java", "Data Structures", "Algorithms"]
+      skills: ["Python", "C", "Java", "Data Structures Basics", "SQL Basics"]
     },
     softSkills: {
       icon: Users,
