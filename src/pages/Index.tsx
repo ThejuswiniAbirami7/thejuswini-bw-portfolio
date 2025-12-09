@@ -3,6 +3,7 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Activities from "@/components/Activities";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Skills />
       <Activities />
       <Contact />
+      <Footer />
     </div>
   );
 };
