@@ -150,6 +150,10 @@ ul { list-style: none; }
 .card-icon.big { width: 56px; height: 56px; font-size: 1.5rem; }
 .card:hover .card-icon { background: var(--black-800); color: var(--white); transform: rotate(8deg) scale(1.08); }
 
+.icon-linkedin { color: #0A66C2; }
+.icon-github  { color: #181717; }
+.icon-leetcode { color: #FFA116; }
+
 .card h3 { font-size: 1.2rem; font-weight: 700; color: var(--black-900); margin-bottom: 0.25rem; }
 .card h4 { font-size: 1.05rem; font-weight: 600; color: var(--black-900); margin: 0.75rem 0 0.5rem; }
 .card-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--black-900); }
